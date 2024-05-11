@@ -24,3 +24,12 @@ The code implements a RAG system (yes again🙂), the embeddings and DB are pres
 
 Make sure to get the Groq API Access from here :
 https://wow.groq.com/
+
+### 5. Structured_Tools
+Structured tools help keep code more organised, readable, and extendable. In this code I implemented a structured tool that provides a comprehensive Topic report on a given topic, uses newsapi for getting the news, ChatOpenAI for getting facts about the topic, and Textblob for easily analysing the sentiment of the topic based on description of articles provided by the news api. If you're using this.
+1. Install textblob to the pre-existing requirements.txt
+2. get the news_api key from ' https://newsapi.org/ '
+and set them in the code
+
+### 6. HuggingFace Inferencing
+This code contains implementation of a streamlit app that takes queries and provides answers using the huggingface opensource model, and also uses hugging face inferencing, since the model isn't downloaded on the system, we just send queries to HF using the requests library.(PS - Don't forget to set the HF_API_KEY in the requirements.txt 🙂)
